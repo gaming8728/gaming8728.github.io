@@ -15,7 +15,9 @@
      crossorigin="anonymous"></script>
     <title>狐狸工作室</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="adsbygoogle.css">
     <script src="script.js"></script>
+    <script src="adsbygoogle.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -23,6 +25,23 @@
 </head>
 
 <body>
+    
+  <div class="overlay" id="adBlockerMessage">
+    偵測到您使用廣告攔截器 
+    請您關閉您的廣告攔截器
+    這是我們的主要收入來源
+    關閉後不會對您造成影響
+    廣告不會阻擋閱讀的視線
+    希望您可以配合一下謝謝
+    
+  </div>
+  <script>
+    if (typeof AdBlocker !== 'undefined' && AdBlocker) {
+      document.getElementById('adBlockerMessage').style.display = 'block';
+    } else {
+      document.getElementById('adBlockerMessage').style.display = 'none';
+    }
+  </script>
 
     <div class="navbar">
         <a href="https://gaming8728.github.io/">首頁</a>
