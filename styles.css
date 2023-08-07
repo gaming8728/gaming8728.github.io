@@ -1,40 +1,108 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(52, 52, 52);
     background-image: url('image/backgroung.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
-/* 導覽列樣式 */
-.navbar {
-  background-color: #222222;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+ul { /* 取消ul預設的內縮及樣式 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* 導覽列內容樣式 */
-.navbar a {
-  float: right;
-  display: block;
+ul.drop-down-menu {
+  position: absolute;
+  border: rgb(52, 52, 52) 1px solid;
+  display: inline-block;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 13px;
+  top: 0px;
+  right: 150px;  
+}
+
+ul.drop-down-menu li {
+  position: relative;
+  white-space: nowrap;
+  border-right: rgb(52, 52, 52) 1px solid;
+}
+
+ul.drop-down-menu > li:last-child {
+  border-right: none;
+}
+
+ul.drop-down-menu > li {
+  float: right; /* 只有第一層是靠右對齊*/
+}
+
+ul.drop-down-menu a {
+  background-color: rgb(52, 52, 52);
   color: #ffffff;
-  text-align: center;
-  padding: 20px 16px;
+  display: block;
+  padding: 0 30px;
   text-decoration: none;
+  line-height: 40px;
+
+}
+ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+  background-color: #747474;
+  color: rgb(255, 255, 255);
+}
+ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+  background-color: #747474;
+  color: rgb(255, 255, 255);
 }
 
-/* 半透明導覽列樣式 */
-.navbar.transparent {
-  background-color: rgba(0, 0, 0, 0.5);
+ul.drop-down-menu ul {
+  border: rgb(52, 52, 52) 1px solid;
+  position: absolute;
+  z-index: 99;
+  left: -1px;
+  top: 100%;
+ min-width: 120px;
 }
 
-/* 鼠標懸停時的樣式 */
-.navbar a:hover {
-  background-color: #606060;
+ul.drop-down-menu ul li {
+  border-bottom: rgb(52, 52, 52) 1px solid;
 }
+
+ul.drop-down-menu ul li:last-child {
+  border-bottom: none;
+}
+
+ul.drop-down-menu ul ul { /*第三層以後的選單出現位置與第二層不同*/
+  z-index: 999;
+  top: 0px;
+  left: 90%;
+}
+
+ul.drop-down-menu ul { /*隱藏次選單*/
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  left: -1px;
+  border-right: 5px;
+}
+
+ul.drop-down-menu li:hover > ul ul { /* 滑鼠滑入之後、次選單之後的選單依舊隱藏*/
+  left: 90%;
+}
+
+ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
+  right: 90%;
+}
+
+
+
+
 
 
 #logo-container {
@@ -156,3 +224,4 @@ p1 {
 span.highlight {
     color: black;
 }
+
