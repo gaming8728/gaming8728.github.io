@@ -23,47 +23,64 @@
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </head>
-
 <body>
-
-
+  
   <ul class="drop-down-menu">
     <li><a class="foxstudioeuorg">foxstudio.eu.org</a>
     </li>
-    <li><a href="https://gaming8728.github.io/  ">首頁</a>
+    <li><a class="tab-button" onclick="openTab(event, 'home')">首頁</a>
     </li>
-    <li><a>地圖</a>
+    <li><a class="tab-button" onclick="openTab(event, 'maps')">地圖</a>
       <ul>
-        <li><a>對戰</a>
-          <ul>
-            <li><a>四族大亂鬥</a>
-          </ul>
+        <li><a class="tab-button" onclick="openTab(event, 'maps.pvp')">對戰</a>
         </li>
-        <li><a>解謎</a> 
+        <li><a class="tab-button" onclick="openTab(event, 'maps.puzzles')">解謎</a>
         </li>
-        <li><a>生存</a>
+        <li><a class="tab-button" onclick="openTab(event, 'adventure')">冒險</a>
         </li>
       </ul>
-    <li><a>教學</a>
-       <ul>
-          <li><a>紅石&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </li>
-          <li><a>伺服器</a>
-          </li>
-          <li><a>局域網</a>
-          </li>
-          <li><a>指令&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          </li>
-
-       </ul>
     </li>
-    
-    
-    </ul>
+    <li><a class="tab-button" onclick="openTab(event, 'teaching')">教學</a>
+      <ul>
+        <li><a class="tab-button" onclick="openTab(event, 'redstone')">紅石</a>
+        </li>
+        <li><a class="tab-button" onclick="openTab(event, 'command')">指令</a>
+        </li>
+        <li><a class="tab-button" onclick="openTab(event, 'redstone')">多人遊戲</a>
+        </li>
+      </ul>
     </li>
   </ul>
-
     
+    <div id="home" class="tab-content">
+      <p class="unselectable"><img src="image/fox.png"></p>
+      <hr class="short-line">
+      <h1 class="h">狐狸工作室</h1>
+      <p>這裡是Minecraft的工作室</p>
+      <hr class="long-line">
+      <h1 class="h1"> ↓↓↓↓↓ 介紹 ↓↓↓↓↓</h1>
+      <p>這裡不只有Minecraft地圖</p>
+      <p>或許還有指令包</p>
+      <p>也說不定會有材質包</p>
+      <p>還會有一些實用的教學</p>
+      <p>教學可能有:怎麼開伺服器、怎麼用局域網連線、怎麼裝模組....之類的</p>
+      <p>之後可能也會提供一些實用的小工具</p>
+      <p>如果覺得...還不錯的話</p>
+      <p>不妨逛逛我我們的網站?</p>
+      <p>以下是實用資料傳送們</p>
+      <h1 class="h2">尚未開發</h1>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -75,24 +92,6 @@
     </a>
     
     
-
-    <p class="unselectable"><img src="image/fox.png"></p>
-    <hr class="short-line">
-    <h1 class="h">狐狸工作室</h1>
-    <p>這裡是Minecraft的工作室</p>
-    <hr class="long-line">
-    <h1 class="h1"> ↓↓↓↓↓ 介紹 ↓↓↓↓↓</h1>
-    <p>這裡不只有Minecraft地圖</p>
-    <p>或許還有指令包</p>
-    <p>也說不定會有材質包</p>
-    <p>還會有一些實用的教學</p>
-    <p>教學可能有:怎麼開伺服器、怎麼用局域網連線、怎麼裝模組....之類的</p>
-    <p>之後可能也會提供一些實用的小工具</p>
-    <p>如果覺得...還不錯的話</p>
-    <p>不妨逛逛我我們的網站?</p>
-    <p>以下是實用資料傳送們</p>
-
-    <h1 class="h2">尚未開發</h1>
 
 
 

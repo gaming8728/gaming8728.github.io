@@ -7,7 +7,7 @@ body {
 }
 
 .foxstudioeuorg{
-font-size: 15px;
+font-size: 24px;
 }
 
 ul { /* 取消ul預設的內縮及樣式 */
@@ -18,11 +18,11 @@ ul { /* 取消ul預設的內縮及樣式 */
 }
 
 ul.drop-down-menu {
-  position: absolute;
+  position: fixed;
   border: rgb(52, 52, 52) 1px solid;
   display: inline-block;
   font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 13px;
+  font-size: 24px;
   top: 0px;
   right: 0px; 
 
@@ -48,7 +48,7 @@ ul.drop-down-menu a {
   background-color: rgb(52, 52, 52);
   color: #ffffff;
   display: block;
-  padding: 0 30px;
+  padding: 5px 30px;
   text-decoration: none;
   line-height: 40px;
   
@@ -235,3 +235,22 @@ span.highlight {
     color: black;
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-button {
+  background-color: #7d7d7d;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tab-button:hover {
+  background-color: #525252;
+}
+
+.tab-content {
+  display: none;
+}
