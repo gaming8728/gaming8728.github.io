@@ -25,6 +25,7 @@
 </head>
 <body>
   
+<div id="myElement">
   <ul class="drop-down-menu">
     <li><a class="foxstudioeuorg">foxstudio.eu.org</a>
     </li>
@@ -42,54 +43,60 @@
     </li>
     <li><a class="tab-button" onclick="openTab(event, 'teaching')">教學</a>
       <ul>
-        <li><a class="tab-button" onclick="openTab(event, 'redstone')">紅石</a>
+        <li><a class="tab-button" onclick="openTab(event, 'teaching.redstone')">紅石</a>
         </li>
-        <li><a class="tab-button" onclick="openTab(event, 'command')">指令</a>
+        <li><a class="tab-button" onclick="openTab(event, 'teaching.command')">指令</a>
         </li>
-        <li><a class="tab-button" onclick="openTab(event, 'redstone')">多人遊戲</a>
+        <li><a class="tab-button" onclick="openTab(event, 'teaching.multiplay')">多人遊戲</a>
         </li>
       </ul>
     </li>
   </ul>
-    
+</div>
+
+
     <div id="home" class="tab-content">
-      <p class="unselectable"><img src="image/fox.png"></p>
+      <p class="unselectable"><img class="logo" src="image/logo.png"></p>
       <hr class="short-line">
-      <h1 class="h">狐狸工作室</h1>
-      <p>這裡是Minecraft的工作室</p>
+      <h1 class="title-text-orange">狐狸工作室</h1>
+      <p class="text">這裡是Minecraft的工作室</p>
       <hr class="long-line">
-      <h1 class="h1"> ↓↓↓↓↓ 介紹 ↓↓↓↓↓</h1>
-      <p>這裡不只有Minecraft地圖</p>
-      <p>或許還有指令包</p>
-      <p>也說不定會有材質包</p>
-      <p>還會有一些實用的教學</p>
-      <p>教學可能有:怎麼開伺服器、怎麼用局域網連線、怎麼裝模組....之類的</p>
-      <p>之後可能也會提供一些實用的小工具</p>
-      <p>如果覺得...還不錯的話</p>
-      <p>不妨逛逛我我們的網站?</p>
-      <p>以下是實用資料傳送們</p>
-      <h1 class="h2">尚未開發</h1>
+      <h1 class="title-text-yellow"> ↓↓↓↓↓ 介紹 ↓↓↓↓↓</h1>
+      <p class="text">這裡不只有Minecraft地圖</p>
+      <p class="text">或許還有指令包</p>
+      <p class="text">也說不定會有材質包</p>
+      <p class="text">還會有一些實用的教學</p>
+      <p class="text">教學可能有:怎麼開伺服器、怎麼用局域網連線、怎麼裝模組....之類的</p>
+      <p class="text">之後可能也會提供一些實用的小工具</p>
+      <p class="text">如果覺得...還不錯的話</p>
+      <p class="text">不妨逛逛我我們的網站?</p>
+      <p class="text">以下是實用資料傳送門</p>
+      <h1 class="error">尚未開發</h1>
     </div>
-   
+    
+    <div id="teaching" class="tab-content">
+      <h1 class="title-text-yellow" >--Minecraft教學--</h1>
+      <hr class="long-line"></hr>
+      <h2 class="text">在Minecraft遇到困難了嗎? </h2>
+      <h2 class="text">在這裡尋找最理想的解決方案吧! </h2>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <a href="https://gaming8728.github.io/">
-    <div id="logo-container">
-        <img id="logo" src="image/fox.png" alt="狐狸工作室">
-        <p id="logotext">狐狸工作室</p>
+    <div id="teaching.redstone" class="tab-content">
+      <h1 class="title-text-yellow" >--Minecraft紅石--</h1>
+      <hr class="long-line"></hr>
+      <h2 class="text">紅石是甚麼?</h2>
+      <h2 class="text">紅石就像是Minecraft的電路</h2>
       </div>
-    </a>
+
+
+
+
+  <a href="https://gaming8728.github.io/">
+    <div id="logo-container">
+        <img id="logo" src="image/logo.png" alt="狐狸工作室">
+        <p id="logotext">狐狸工作室</p>
+    </div>
+  </a>
     
     
 

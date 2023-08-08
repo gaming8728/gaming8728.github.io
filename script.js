@@ -43,3 +43,15 @@ function togglePopup() {
     // 預設顯示分頁一
     document.getElementById("home").style.display = "block";
   };
+
+
+  window.addEventListener('wheel', function(event) {
+    var element = document.getElementById('myElement');
+    var rect = element.getBoundingClientRect();
+  
+    if (event.deltaY < 0) {
+      element.classList.add('transparent');
+    } else {
+      element.classList.remove('transparent');
+    }
+  });

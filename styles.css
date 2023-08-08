@@ -6,6 +6,20 @@ body {
     color: rgb(255, 255, 255);
 }
 
+#myElement {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+#myElement:hover {
+  opacity: 1;
+  transition: opacity 0.01s ease;
+}
+
+#myElement.transparent {
+  opacity: 1;
+}
+
 .foxstudioeuorg{
 font-size: 24px;
 }
@@ -24,7 +38,8 @@ ul.drop-down-menu {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 24px;
   top: 0px;
-  right: 0px; 
+  right: 0px;
+  opacity: 1;
 
 }
 
@@ -177,14 +192,14 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
     display: none;
     }
 
-img {
+.logo {
     width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
   }
 
-.h1 {
+.title-text-yellow {
     color: yellow;
     font-size: 48px;
     font-weight: bold;
@@ -192,7 +207,7 @@ img {
     font-family: "", sans-serif;
 }
 
-.h2 {
+.error {
   color: rgb(255, 117, 117);
   font-size: 48px;
   font-weight: bold;
@@ -200,7 +215,7 @@ img {
   font-family: "", sans-serif;
 }
 
-p {
+.text {
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -208,7 +223,7 @@ p {
     font-family: "", sans-serif;
 }
 
-.h {
+.title-text-orange {
   color: orange;
     font-size: 48px;
     font-weight: bold;
@@ -216,19 +231,14 @@ p {
     font-family: "", sans-serif;
 }
 
-p1 {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
 .short-line {
     width: 25%;
-    border: 2px solid black;
+    border: 2px solid rgb(201, 201, 201);
 }
 
 .long-line {
     width: 30%;
-    border: 2px solid black;
+    border: 2px solid rgb(201, 201, 201);
 }
 
 span.highlight {
