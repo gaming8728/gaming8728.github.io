@@ -265,3 +265,22 @@ span.highlight {
   display: none;
 }
 
+#Buttonimage{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  margin-top: 100px;
+}
+
+#buttonimage{
+  width: 100px; /* 調整logo的寬度 */
+  height: auto; /* 根據寬度自動調整高度 */
+  display: inline-block;
+}
+
+#buttonimage-text{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+
