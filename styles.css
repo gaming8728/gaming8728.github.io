@@ -134,20 +134,21 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
   position: fixed;
   top: 10px;
   left: 10px;
+  margin-top: -15px;
 }
 
 #logo {
   width: 100px; /* 調整logo的寬度 */
   height: auto; /* 根據寬度自動調整高度 */
   display: inline-block;
-  margin-top: -25px;
+ 
 }
 
 #logotext {
   font-size: 40px;
   color: #ffffff;
-  margin-top: -58px;
   margin-left: 100px;
+  margin-top: -58px;
 }
 
  .unselectable {
@@ -250,37 +251,35 @@ span.highlight {
 }
 
 .tab-button {
-  background-color: #7d7d7d;
   border: none;
   color: #000;
   padding: 10px 20px;
   cursor: pointer;
 }
 
-.tab-button:hover {
-  background-color: #525252;
-}
 
-.tab-content {
-  display: none;
-}
+
 
 #Buttonimage{
   position: fixed;
-  top: 10px;
   left: 10px;
-  margin-top: 100px;
 }
 
 #buttonimage{
-  width: 100px; /* 調整logo的寬度 */
+  width: 300px; /* 調整logo的寬度 */
   height: auto; /* 根據寬度自動調整高度 */
   display: inline-block;
+  margin-top: -40px;
+  border: 10px solid rgb(52, 52, 52);
 }
 
 #buttonimage-text{
+  width: 300px;
   font-size: 40px;
   color: #ffffff;
+  text-align: center;
+  background-color:rgb(52, 52, 52);
+  border: 10px solid rgb(52, 52, 52);
 }
 
 
