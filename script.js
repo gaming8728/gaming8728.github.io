@@ -32,6 +32,3 @@ window.addEventListener('wheel', function(event) {
   }
 });
 
-
-
-window.location.href = "game/minecraft/index.html";
