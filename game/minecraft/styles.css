@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(52, 52, 52);
     background-image: url('image/backgroung.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,16 +141,14 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
   width: 100px; /* 調整logo的寬度 */
   height: auto; /* 根據寬度自動調整高度 */
   display: inline-block;
-  margin-top: 10px;
  
 }
 
-
 #logotext {
   font-size: 40px;
-  color: #000000;
+  color: #ffffff;
   margin-left: 100px;
-  margin-top: -85px;
+  margin-top: -58px;
   font-weight: bold;
 }
 
@@ -197,7 +195,7 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
     }
 
 .logo {
-    width: 200px;
+    width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -220,7 +218,7 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
 }
 
 .text {
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -249,7 +247,6 @@ span.highlight {
     color: black;
 }
 
-
 .tab-content {
   display: none;
 }
@@ -260,6 +257,8 @@ span.highlight {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+
 
 
 #Buttonimage{
@@ -284,27 +283,6 @@ span.highlight {
   border: 10px solid rgb(52, 52, 52);
 }
 
-
-#text-container {
-  position: relative;
-}
-
-#text-container-text {
-  margin-top: -100px;
-  margin-left: -700px;
-  color: rgb(0, 0, 0);
-  font-size: 48px;
-}
-
-#text-container-description {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
 
 
 
