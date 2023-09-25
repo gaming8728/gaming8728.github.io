@@ -135,6 +135,7 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
   top: 10px;
   left: 10px;
   margin-top: -15px;
+  z-index: 9999 ;
 }
 
 #logo {
@@ -203,8 +204,8 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
     margin: 0 auto;
   }
 
-.title-text-yellow {
-    color: yellow;
+.title {
+    color: rgb(255, 174, 0);
     font-size: 48px;
     font-weight: bold;
     text-align: center;
@@ -227,21 +228,8 @@ ul.drop-down-menu ul li:hover > ul { /* 第二層之後的選單展開位置*/
     font-family: "", sans-serif;
 }
 
-.title-text-orange {
-  color: orange;
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    font-family: "", sans-serif;
-}
-
-.short-line {
+.line {
     width: 25%;
-    border: 2px solid rgb(201, 201, 201);
-}
-
-.long-line {
-    width: 30%;
     border: 2px solid rgb(201, 201, 201);
 }
 
@@ -306,5 +294,17 @@ span.highlight {
   text-overflow: ellipsis;
 }
 
+.container {
+  overflow: hidden;
+}
 
+.left-block {
+  float: left;
+  width: 70%;
+}
+
+.right-block {
+  float: right;
+  width: 30%;
+}
 
