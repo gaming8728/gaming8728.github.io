@@ -22,8 +22,10 @@ function togglePopup() {
   
 
 
+
   function openTab(evt, tabName) {
     var i, tabContent, tabButton;
+    
     
     tabContent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabContent.length; i++) {
@@ -37,6 +39,8 @@ function togglePopup() {
     
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+
+
   }
   
   window.onload = function() {
@@ -55,3 +59,5 @@ function togglePopup() {
       element.classList.remove('transparent');
     }
   });
+  
+
